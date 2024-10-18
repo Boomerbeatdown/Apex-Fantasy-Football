@@ -1,0 +1,64 @@
+# Node.js
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build directories
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor folders
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Django
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Django migrations
+*/migrations/*.py
+*/migrations/__init__.py
+
+# Local settings
+local_settings.py
+db.sqlite3
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+
+# Other IDE and editor folders
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+.vscode/
+
+# Miscellaneous
+*.bak
+*.tmp
