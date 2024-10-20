@@ -1,189 +1,70 @@
-# Apex Fantasy Football Platform
+# Getting Started with Create React App
 
-## Overview
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Welcome to **Apex Fantasy Football**, a state-of-the-art fantasy sports management platform designed to cater to both casual and competitive fantasy football players. Our platform offers a dynamic environment for creating, managing, and customizing fantasy football leagues, with a focus on deep strategy, participant engagement, and league longevity. Built to handle complex league structures, advanced analytics, and customizable features, **Apex Fantasy Football** is perfect for traditional leagues as well as highly tailored formats. This README provides an overview of the platform's core components, features, and technologies.
+## Available Scripts
 
-## Table of Contents
+In the project directory, you can run:
 
-1. [Platform Components](#platform-components)
-2. [Feature Highlights](#feature-highlights)
-3. [Technology Stack](#technology-stack)
-4. [Installation & Setup](#installation--setup)
-5. [Data Models Overview](#data-models-overview)
-6. [API Integrations](#api-integrations)
-7. [Testing & Deployment](#testing--deployment)
-8. [Contributing](#contributing)
-9. [Contact Information](#contact-information)
+### `npm start`
 
-## Platform Components
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The Apex Fantasy Football platform supports the following core components, each designed to enhance the fantasy football experience through intuitive management tools, detailed analytics, and interactive features:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Core Platform Components
+### `npm test`
 
-- **User Management**: User registration, authentication, role-based access control (admins, commissioners, owners, and players).
-- **League Management**: Full suite for creating, configuring, and managing leagues, including rulebook customization and enforcement tools.
-- **Team & Owner Management**: Create and manage teams, assign team owners, track team histories, and facilitate roster changes.
-- **Player Management**: Track player stats, manage contracts, monitor injuries, and handle player valuations.
-- **Fantasy Points & Scoring Systems**: Highly customizable scoring systems for both offensive and defensive player stats.
-- **Draft Room**: Supports multiple draft types, including snake, auction, and keeper formats, with real-time draft analytics and auction tools.
-- **Transactions & Trades**: Sophisticated transaction system featuring trade auctions, counter-proposals, and a FAAB-based waiver system.
-- **Game Simulations & Results**: Handles live scoring, real-time game tracking, and weekly matchups.
-- **Standings & Playoffs**: Automates division standings, wild card tracking, and customizable playoff formats.
-- **Analytics & Reporting**: Delivers advanced metrics, data-driven insights, and historical performance tracking for both teams and players.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Additional Platform Features
+### `npm run build`
 
-- **Salary Cap & Contracts**: Manage salary cap, player contracts, cap hits, and financial penalties with detailed tracking.
-- **Trophies & Awards**: Custom trophies and awards for yearly, weekly, and career achievements, integrated with a Hall of Fame system.
-- **Rulebook Customization**: Complete flexibility to customize league rules and enforce them dynamically.
-- **Fan Engagement Tools**: Includes fan polls, power rankings, matchup ratings, and commissioner notes.
-- **Media & Social Integration**: Supports private messages, social feeds, and media uploads within the league.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Feature Highlights
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. **Dynamic Rulebook**: Tailor your league’s rules with a robust enforcement engine that adapts to different formats.
-2. **Advanced Player Metrics**: Evaluate player performances with comprehensive stats and custom metrics.
-3. **Customizable Draft Formats**: Flexibility in drafting, allowing snake, auction, and keeper drafts with tradeable picks.
-4. **Interactive Transaction System**: Real-time trade auctions, counter-proposals, and waiver management using a FAAB budget.
-5. **Data-Driven Insights**: Utilize predictive analytics and roster optimization tools to make better decisions.
-6. **Detailed Team & Player History**: Visualize the progress and achievements of teams and players across seasons.
-7. **Community Engagement**: Foster an engaging experience through polls, rankings, and message boards.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Technology Stack
+### `npm run eject`
 
-To ensure a smooth, scalable, and maintainable platform, **Apex Fantasy Football** leverages a modern technology stack:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Client-Side (Frontend)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- **Code Editor**: Visual Studio Code
-- **Framework**: React
-- **State Management**: Redux
-- **Styling**: Styled Components, Material-UI for responsive UI elements
-- **Routing**: React Router
-- **Form Handling**: React Hook Form for streamlined form validation
-- **Testing**: Jest for unit testing, Cypress for end-to-end testing
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Server-Side (Backend)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- **Framework**: Django (Python)
-- **Task Management**: Celery for task scheduling (async tasks, emails, etc.)
-- **Database**: PostgreSQL
-- **ORM**: Django ORM for database interactions
-- **API Layer**: Django REST Framework (DRF) and GraphQL for efficient data querying
-- **Caching**: Redis for caching and real-time updates
+## Learn More
 
-### Database
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- **Database System**: PostgreSQL, optimized for complex queries and large datasets
-- **Database Management**: pgAdmin for GUI-based management
-- **Migration Tool**: Django’s built-in ORM migrations
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Version Control
+### Code Splitting
 
-- **System**: Git
-- **Remote Repository**: GitHub/GitLab for version control and project management
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### API Integration
+### Analyzing the Bundle Size
 
-- **API Platform**: Integrated with RapidAPI for third-party data
-- **GraphQL APIs**: For optimized, flexible querying across multiple data points
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Monitoring & Deployment
+### Making a Progressive Web App
 
-- **CI/CD**: GitHub Actions or CircleCI for continuous integration and deployment
-- **Containerization**: Docker for consistent deployment environments
-- **Cloud Hosting**: AWS Elastic Beanstalk, Heroku, or DigitalOcean for deployment
-- **Error Tracking**: Sentry for real-time error reporting
-- **Performance Monitoring**: Prometheus and Grafana for tracking system performance
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Installation & Setup
+### Advanced Configuration
 
-Follow these instructions to set up **Apex Fantasy Football** on your local machine:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Prerequisites
+### Deployment
 
-- Node.js with PNPM installed for frontend dependencies
-- Python with Poetry installed for backend dependencies
-- PostgreSQL server running locally or via a cloud service
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### Frontend Setup
+### `npm run build` fails to minify
 
-1. Navigate to the `frontend` directory.
-2. Install dependencies:
-```bash
-pnpm install
-```
-3. Start the development server:
-```bash
-pnpm start
-```
-
-### Backend Setup
-
-1. Navigate to the `backend` directory.
-2. Create a virtual environment:
-```bash
-poetry shell
-```
-3. Install backend dependencies:
-```bash
-poetry install
-```
-4. Set up the database:
-```bash
-python manage.py migrate
-```
-5. Start the Django development server:
-```bash
-python manage.py runserver
-```
-
-### Testing
-
-- **Frontend**: Run Jest for frontend unit tests:
-```bash
-pnpm test
-```
-- **Backend**: Run Pytest for backend tests:
-```bash
-poetry run pytest
-```
-
-## Data Models Overview
-
-The platform employs several data models to manage users, leagues, teams, players, and transactions:
-
-1. **User**: Handles user accounts, permissions, and roles.
-2. **League**: Stores league configurations, rulebooks, and history.
-3. **Team**: Manages team rosters, ownership, and financials.
-4. **Player**: Tracks player stats, contracts, injuries, and market value.
-5. **Game**: Manages game schedules, live tracking, and scoring.
-6. **Draft**: Supports multiple draft types, including tradeable draft picks.
-7. **Transaction**: Tracks trades, waivers, free-agent acquisitions, and penalties.
-
-## API Integrations
-
-Apex Fantasy Football integrates several external APIs for real-time updates and seamless data retrieval:
-
-- **GraphQL APIs**: For efficient querying and mutations across various data points.
-- **REST APIs**: To handle external data retrieval, including player stats and game results.
-
-## Testing & Deployment
-
-Automated testing and continuous integration/deployment (CI/CD) ensure platform stability:
-
-- **Frontend**: Jest for unit tests, Cypress for end-to-end tests.
-- **Backend**: Pytest for unit and integration tests, Selenium for UI tests.
-- **Containerization**: Docker for consistent development and deployment environments.
-- **Cloud Deployment**: Host on AWS, Heroku, or other cloud services.
-- **Performance Monitoring**: Integrated tools like Prometheus and Grafana for real-time system monitoring.
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to **Apex Fantasy Football**, please follow the guidelines in the `CONTRIBUTING.md` file.
-
-## Contact Information
-
-For questions or support, reach out to our development team at [support@apexfantasyfootball.com](mailto:support@apexfantasyfootball.com).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,64 +1,23 @@
-# Node.js
-# Logs
-logs
-*.log
-npm-debug.log*
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Dependency directories
-node_modules/
-jspm_packages/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Build directories
-dist/
-build/
+# testing
+/coverage
 
-# Environment variables
-.env
-.env.local
-.env.*.local
+# production
+/build
 
-# IDE and editor folders
-.idea/
-.vscode/
-
-# OS files
+# misc
 .DS_Store
-Thumbs.db
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Django
-# Python
-__pycache__/
-*.py[cod]
-
-# Virtual environments
-venv/
-env/
-ENV/
-.venv/
-.env/
-
-# Django migrations
-*/migrations/*.py
-*/migrations/__init__.py
-
-# Local settings
-local_settings.py
-db.sqlite3
-
-# Static files
-staticfiles/
-
-# Media files
-media/
-
-# Other IDE and editor folders
-*.swp
-*.swo
-*.sublime-workspace
-*.sublime-project
-*.code-workspace
-.vscode/
-
-# Miscellaneous
-*.bak
-*.tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
