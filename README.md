@@ -74,7 +74,11 @@ Additional Platform Features
 	•	Rulebook Customization: Complete flexibility to customize league rules and enforce them dynamically.
 	•	Fan Engagement Tools: Includes fan polls, power rankings, matchup ratings, and commissioner notes.
 	•	Media & Social Integration: Supports private messages, social feeds, and media uploads within the league.
+     For a full list of features, see our [Features.md](./Features.md) file.
 
+## Documentation
+
+Looking for in-depth information? Check out our [Documentation section](./docs/README.md) for detailed guides, FAQs, and advanced tips.
 Customizable Branding
 
 Apex Fantasy Football provides extensive customization options to personalize leagues and teams, making the experience more engaging:
