@@ -1,10 +1,12 @@
-Here’s the complete and updated README.md file:
-
 Apex Fantasy Football Platform
 
 Overview
 
-Welcome to Apex Fantasy Football, a state-of-the-art fantasy sports management platform designed to cater to both casual and competitive fantasy football players. Our platform offers a dynamic environment for creating, managing, and customizing fantasy football leagues, with a focus on deep strategy, participant engagement, and league longevity. Built to handle complex league structures, advanced analytics, and customizable features, Apex Fantasy Football is perfect for traditional leagues as well as highly tailored formats. This README provides an overview of the platform’s core components, features, and technologies.
+Welcome to Apex Fantasy Football, the ultimate fantasy sports management platform designed for both casual fans and competitive players seeking a rich, customizable experience. Apex Fantasy Football provides a dynamic environment for creating, managing, and personalizing leagues, emphasizing strategic depth, participant engagement, and league longevity. 
+
+Our platform supports diverse league types, including redraft, keeper, and contract leagues, with flexible roster options such as offensive players, defensive players, special teams, practice squads, and even minor league systems. Apex Fantasy Football offers powerful tools to optimize league management and strategic play, such as trade blocks, trade auctions, trade counterproposal auctions, a salary cap management assistant, waiver wire assistant, trade analyzer, and FAAB budget tracker.
+
+Customize scoring with unique modifiers, including Team Captains, Head Coach points, Home Field Advantage, and Best Bench scoring, adding new layers of strategy and fun. League history is also rich with features like record books, history logs, team and player awards, hall of fame entries, and rivalry tracking. Complete league and team branding options allow for further personalization, making Apex Fantasy Football the ultimate platform for traditional formats and highly tailored leagues alike.
 
 Table of Contents
 
@@ -199,15 +201,19 @@ def apply_scoring_modifiers(team_stats, modifiers):
     
     return score
 
-Feature Highlights
-
-	•	Dynamic Rulebook: Tailor your league’s rules with a robust enforcement engine that adapts to different formats.
-	•	Advanced Player Metrics: Evaluate player performances with comprehensive stats and custom metrics.
-	•	Customizable Draft Formats: Flexibility in drafting, allowing snake, auction, and keeper drafts with tradeable picks.
-	•	Interactive Transaction System: Real-time trade auctions, counter-proposals, and waiver management using a FAAB budget.
-	•	Data-Driven Insights: Utilize predictive analytics and roster optimization tools to make better decisions.
-	•	Detailed Team & Player History: Visualize the progress and achievements of teams and players across seasons.
-	•	Community Engagement: Foster an engaging experience through polls, rankings, and message boards.
+    Feature Highlights
+    - Dynamic Rulebook**: Customize your league’s rules with a robust enforcement engine adaptable to multiple formats, providing flexibility in structure and rule application.
+    - Advanced Player Metrics**: Dive deep into player performance with comprehensive stats and custom metrics, tailored to highlight individual player value and team fit.
+    - Customizable Draft Formats**: Choose from various draft formats, including snake, auction, and keeper drafts, with options for tradeable picks to enhance strategic depth.
+    - Interactive Transaction System**: Manage transactions in real-time with features like trade auctions, counter-proposals, and FAAB-based waiver management, bringing added excitement to league trades and acquisitions.
+    - Roster Options & Tools**: Tailor team composition with diverse roster options, including offensive and defensive players, special teams, practice squads, and minor league rosters. Utilize tools like the salary cap management assistant and waiver wire assistant to maintain a competitive edge.
+    - Data-Driven Insights**: Leverage predictive analytics, roster optimization tools, and the trade analyzer for smarter, data-backed decisions and season-long success.
+    - Scoring Modifiers**: Apply unique scoring features like Team Captains, Head Coach bonuses, Home Field Advantage, and Best Bench, adding layers of strategy to each matchup.
+    - Detailed Team & Player History**: Track the journey of teams and players over seasons with in-depth records, awards, hall of fame entries, and rivalry logs, visualizing the legacy and growth of your league.
+    - Contract System**: Implement a contract structure for players, adding realism and long-term planning to league management.
+    - Community Engagement**: Encourage league interaction through features like polls, rankings, message boards, and rivalry tracking for an engaging social experience.
+    - League & Team Branding**: Customize league and team visuals with branding tools, allowing logos, colors, and themes that reflect each league's unique identity.
+Apex Fantasy Football combines these features and more into a flexible, robust platform, enabling leagues to customize their experience to match any fantasy football vision.
 
 Technology Stack
 
