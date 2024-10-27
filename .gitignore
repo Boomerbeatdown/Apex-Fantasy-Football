@@ -62,3 +62,9 @@ media/
 # Miscellaneous
 *.bak
 *.tmp
+
+node_modules/
+frontend/build/
+backend/__pycache__/
+*.env
+*.DS_Store
