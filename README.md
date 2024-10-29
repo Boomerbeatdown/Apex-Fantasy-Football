@@ -78,7 +78,8 @@ Additional Platform Features
 
 ## Documentation
 
-Looking for in-depth information? Check out our [Documentation section](./docs/README.md) for detailed guides, FAQs, and advanced tips.
+For a full list of features, usage details, and legal information, please visit our [Documentation section](./docs/README.md).
+
 Customizable Branding
 
 Apex Fantasy Football provides extensive customization options to personalize leagues and teams, making the experience more engaging:
