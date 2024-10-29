@@ -74,6 +74,11 @@ Additional Platform Features
 	•	Rulebook Customization: Complete flexibility to customize league rules and enforce them dynamically.
 	•	Fan Engagement Tools: Includes fan polls, power rankings, matchup ratings, and commissioner notes.
 	•	Media & Social Integration: Supports private messages, social feeds, and media uploads within the league.
+     For a full list of features, see our [Features.md](./Features.md) file.
+
+## Documentation
+
+For a full list of features, usage details, and legal information, please visit our [Documentation section](./docs/README.md).
 
 Customizable Branding
 
