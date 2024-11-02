@@ -1,18 +1,17 @@
-// src/App.js
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
 
-import React from 'react';
-import { useSelector } from 'react-redux';
 
-const App = () => {
-    // Example of accessing Redux state
-    const exampleState = useSelector((state) => state.example);
-
+function App() {
     return (
-        <div>
-            <h1>Welcome to Redux Setup!</h1>
-            <p>{exampleState.example}</p> {/* Displaying the example state */}
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+            </Routes>
+        </Router>
     );
-};
+}
 
 export default App;
