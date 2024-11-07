@@ -1,0 +1,63 @@
+/* src/components/styles.css */
+
+:root {
+    /* Primary Palette */
+    --charcoal-gray: #333333;
+    --green: #2E8B57;
+    --gold: #FFD700;
+  
+    /* Secondary Palette (Rivalry Red) */
+    --deep-red: #8B0000;
+    --silver: #C0C0C0;
+    --black: #000000;
+  }
+  
+  body {
+    background-color: var(--charcoal-gray);
+    color: var(--gold);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Primary Theme */
+  .home-container {
+    background-color: var(--charcoal-gray);
+    color: var(--gold);
+  }
+  
+  .home-button {
+    background-color: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: var(--gold);
+    color: var(--charcoal-gray);
+  }
+  
+  /* Rivalry Red Theme for Competitive Features */
+  .rivalry-container {
+    background-color: var(--deep-red);
+    color: var(--silver);
+    padding: 20px;
+    border: 1px solid var(--black);
+  }
+  
+  .rivalry-button {
+    background-color: var(--silver);
+    color: var(--deep-red);
+    border: 1px solid var(--black);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rivalry-button:hover {
+    background-color: var(--black);
+    color: var(--silver);
+  }
+  

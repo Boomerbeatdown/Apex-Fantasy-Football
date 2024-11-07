@@ -1,0 +1,46 @@
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: boomerbeatdown
+      POSTGRES_PASSWORD: sooners7
+      POSTGRES_DB: apex_fantasy_football_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U boomerbeatdown"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: "python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DB_NAME=apex_fantasy_football_db
+      - DB_USER=boomerbeatdown
+      - DB_PASSWORD=sooners7
+      - DB_HOST=db
+      - DB_PORT=5432
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+
