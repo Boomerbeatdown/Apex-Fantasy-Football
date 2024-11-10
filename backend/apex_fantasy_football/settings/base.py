@@ -18,9 +18,12 @@ INSTALLED_APPS = [
     # Third-party apps
     'corsheaders',
     'rest_framework',
-    'rest_framework.authtoken',  # Enables token-based authentication
+    'rest_framework.authtoken',  # Optional: can be removed if only JWT is used
     'allauth',
     'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth',
+    'rest_framework_simplejwt',  # JWT support
 
     # Local apps
     'apex_fantasy_football',
@@ -30,16 +33,17 @@ INSTALLED_APPS = [
     'draft',
 ]
 
+SITE_ID = 1
+
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'allauth.account.middleware.AccountMiddleware',  # Add this line
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'apex_fantasy_football.urls'
@@ -72,12 +76,21 @@ AUTHENTICATION_BACKENDS = (
 # REST Framework Settings
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.SessionAuthentication',  # Optional
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+}
+
+# JWT Settings
+from datetime import timedelta
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True,
 }
 
 # Internationalization
@@ -93,7 +106,40 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Debug Toolbar Settings
 INTERNAL_IPS = [
     '127.0.0.1',
     'localhost',
 ]
+
+# Django-Allauth settings
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+
+# REST Auth with JWT support
+REST_USE_JWT = True
+
+# Email backend for development
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Register Serializer for Custom User Registration
+REST_AUTH_REGISTER_SERIALIZERS = {
+    'REGISTER_SERIALIZER': 'fantasy.serializers.CustomRegisterSerializer',
+}
+
+# settings.py
+SIMPLE_JWT = {
+    'TOKEN_OBTAIN_SERIALIZER': 'your_app.serializers.CustomTokenObtainPairSerializer',
+    # other JWT settings as required
+}
+# settings.py
+from datetime import timedelta
+
+SIMPLE_JWT.update({
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True,
+})

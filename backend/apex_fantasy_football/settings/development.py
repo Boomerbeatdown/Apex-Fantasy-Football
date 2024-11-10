@@ -23,7 +23,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', 'apex_fantasy_football_db'),
         'USER': os.getenv('DB_USER', 'boomerbeatdown'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'sooners7'),
-        'HOST': os.getenv('DB_HOST', 'db'),  # Set 'db' as the default host for Docker
+        'HOST': os.getenv('db',  'localhost'),  # Set 'db' as the default host for Docker
         'PORT': os.getenv('DB_PORT', '5432'),
     }
 }

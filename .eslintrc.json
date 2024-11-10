@@ -1,0 +1,36 @@
+// .eslintrc.json
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react"],
+    "rules": {
+      "indent": ["error", 2],               // Enforce 2-space indentation
+      "quotes": ["error", "single"],        // Enforce single quotes
+      "semi": ["error", "always"],          // Enforce semicolons at end of statements
+      "no-console": "warn",                 // Warn on console.log statements
+      "react/prop-types": "off",            // Disable prop-types as we may use TypeScript
+      "react/react-in-jsx-scope": "off",    // Not needed in React 17+
+      "prettier/prettier": "error"          // Enforce Prettier rules as ESLint errors
+    },
+    "settings": {
+      "react": {
+        "version": "detect"                 // Automatically detects the React version
+      }
+    }
+  }
+  

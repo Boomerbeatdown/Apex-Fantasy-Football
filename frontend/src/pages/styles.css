@@ -60,4 +60,11 @@
     background-color: var(--black);
     color: var(--silver);
   }
-  
+  /* styles.css */
+.info {
+  color: green;
+}
+
+.error {
+  color: red;
+}
