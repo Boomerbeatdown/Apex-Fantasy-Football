@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Hub</title>
+    <link rel="stylesheet" href="LeagueHUBstyle.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h2>League Hub</h2>
+        <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Standings</a></li>
+            <li><a href="#">Player Hub</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Insights Lab</a></li>
+            <li><a href="#">Draft Center</a></li>
+            <!-- More links as needed -->
+        </ul>
+        <input type="text" class="search-bar" placeholder="Search...">
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <div class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <h1>Command Your Team, Conquer the League</h1>
+            <p>Current Rank: <span id="user-rank">5</span></p>
+        </section>
+
+        <!-- Widgets Area -->
+        <section class="widgets">
+            <!-- Countdown Timer -->
+            <div class="widget timer">
+                <h2>Next Game In</h2>
+                <p id="countdown">00:00:00</p>
+            </div>
+
+            <!-- Live Game Tracking -->
+            <div class="widget live-game">
+                <h2>Live Game Stats</h2>
+                <p>Points: <span id="live-points">0</span></p>
+            </div>
+
+            <!-- Matchup Overview -->
+            <div class="widget matchup">
+                <h2>Upcoming Matchup</h2>
+                <p>Predicted Outcome: <span id="predicted-outcome">50%</span></p>
+            </div>
+        </section>
+
+        <!-- News Feed -->
+        <section class="news-feed">
+            <h2>League News</h2>
+            <div class="news-ticker">
+                <p>Player injury update... | Major trade announced... | Top scorer of the week: John Doe</p>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <div class="badge">Weekly Top Scorer</div>
+            <div class="badge">Winning Streak</div>
+            <div class="badge">Most Trades</div>
+        </section>
+    </div>
+
+    <script src="LeagueHUBscript.js"></script>
+</body>
+</html>

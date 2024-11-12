@@ -1,0 +1,20 @@
+/* src/TeamRosterManagement.css */
+
+.full-roster-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.input-disabled {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.button-disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}

@@ -93,3 +93,26 @@ export function logoutUser() {
 }
 
 export default axiosInstance;
+// src/services/axiosConfig.js
+import axios from 'axios';
+
+const instance = axios.create({
+    baseURL: process.env.REACT_APP_API_URL, // Base URL from environment variables
+    timeout: 5000, // 5 seconds timeout
+});
+
+// Retry logic utility
+const retryRequest = async (request, retries = 3, delay = 1000) => {
+    for (let i = 0; i < retries; i++) {
+        try {
+            return await request();
+        } catch (error) {
+            if (i === retries - 1 || !error.response || error.response.status >= 500) {
+                throw error; // Give up after maximum retries or if it's a server error
+            }
+            await new Promise(resolve => setTimeout(resolve, delay));
+        }
+    }
+};
+
+export { instance as axios, retryRequest };
