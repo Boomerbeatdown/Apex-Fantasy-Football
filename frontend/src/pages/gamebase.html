@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Game Day Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gamebasestyles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">Game Day Hub</header>
+    
+    <!-- Featured Matchups Section -->
+    <section class="featured-matchups">
+        <div class="matchup-card">
+            <img src="team1-logo.png" alt="Team 1 Logo" class="team-logo">
+            <div class="team-name">Team 1</div>
+            <div class="live-score">24</div>
+        </div>
+        <div class="matchup-card">
+            <img src="team2-logo.png" alt="Team 2 Logo" class="team-logo">
+            <div class="team-name">Team 2</div>
+            <div class="live-score">21</div>
+        </div>
+    </section>
+
+    <!-- Live Game Feed Section -->
+    <section class="live-feed">
+        <div class="live-game-card">
+            <div class="team-name">Team 3 vs. Team 4</div>
+            <div class="live-score">14 - 10</div>
+        </div>
+        <div class="live-game-card">
+            <div class="team-name">Team 5 vs. Team 6</div>
+            <div class="live-score">35 - 28</div>
+        </div>
+    </section>
+
+    <!-- Matchup Comparison Cards -->
+    <section class="comparison-card">
+        <div class="comparison-title">Matchup Preview</div>
+        <div>Projected Score: Team 1 - 28, Team 2 - 25</div>
+    </section>
+
+    <!-- Schedule and Upcoming Games Section -->
+    <section class="schedule-section">
+        <div class="schedule-date">Upcoming Games</div>
+        <ul>
+            <li>Game 1 - Date: 11/15</li>
+            <li>Game 2 - Date: 11/16</li>
+        </ul>
+    </section>
+
+    <!-- Player Spotlight -->
+    <section class="player-spotlight">
+        <div class="player-name">Player of the Game</div>
+        <div>Player Stats: 150 Yards, 2 Touchdowns</div>
+    </section>
+
+    <!-- Chat Section -->
+    <section class="game-chat">
+        <div class="chat-title">Game Chat</div>
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <!-- Back to League Hub Button -->
+    <button onclick="backToLeagueHub()">Back to League Hub</button>
+
+    <script src="gamebasescript.js"></script>
+</body>
+</html>

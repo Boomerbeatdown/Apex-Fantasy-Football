@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Hub</title>
+    <link rel="stylesheet" href="playerhubstyles.css">
+</head>
+<body>
+    <header class="header">Player Hub</header>
+
+    <!-- Player Profile Section -->
+    <section class="player-profile">
+        <img class="player-photo" src="player-photo.jpg" alt="Player Photo">
+        <div class="player-info">
+            <h1 class="player-name">John Doe</h1>
+            <p class="player-position">Quarterback - Team XYZ</p>
+            <p>Bio: Top-performing quarterback with a passion for precision.</p>
+        </div>
+    </section>
+
+    <!-- Stats Dashboard -->
+    <section class="stats-dashboard">
+        <div class="stat-card">
+            <div class="stat-title">Fantasy Points</div>
+            <div class="stat-value">120</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-title">Weekly Trend</div>
+            <div class="stat-value">+12%</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-title">Games Played</div>
+            <div class="stat-value">8</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-title">Injury Status</div>
+            <div class="stat-value">Healthy</div>
+        </div>
+    </section>
+
+    <!-- Performance Trend Graphs -->
+    <section class="trend-graphs">
+        <h2 class="graph-title">Performance Trends</h2>
+        <canvas id="trendGraph" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Player Ranking System -->
+    <section class="comparison-section">
+        <h2 class="comparison-title">Player Rankings</h2>
+        <button class="filter-btn" id="overall-rank-btn">Overall</button>
+        <button class="filter-btn" id="position-rank-btn">By Position</button>
+        <button class="filter-btn" id="projection-rank-btn">Projections</button>
+        <div id="ranking-display" class="highlighted-stat">Select a ranking to view.</div>
+    </section>
+
+    <!-- Free Agents -->
+    <section class="highlights-section">
+        <h2 class="highlight-title">Free Agents</h2>
+        <ul>
+            <li>Player A <button class="toggle-btn">Add to Team</button></li>
+            <li>Player B <button class="toggle-btn">Add to Team</button></li>
+        </ul>
+    </section>
+
+    <!-- Waivers -->
+    <section class="highlights-section">
+        <h2 class="highlight-title">Waivers</h2>
+        <ul>
+            <li>Player C <button class="toggle-btn">Bid</button></li>
+            <li>Player D <button class="toggle-btn">Bid</button></li>
+        </ul>
+    </section>
+
+    <!-- Trade Block -->
+    <section class="highlights-section">
+        <h2 class="highlight-title">Trade Block</h2>
+        <ul>
+            <li>Player E</li>
+            <li>Player F</li>
+        </ul>
+    </section>
+
+    <!-- Back to League Hub -->
+    <footer>
+        <button class="toggle-btn" onclick="backToLeagueHub()">Back to League Hub</button>
+    </footer>
+
+    <script src="playerhubscript.js"></script>
+</body>
+</html>

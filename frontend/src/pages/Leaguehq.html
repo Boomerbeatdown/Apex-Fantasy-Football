@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>League Resource and Information HQ</title>
+<link rel="stylesheet" href="Leaguehqstyles.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">League Resource and Information HQ</div>
+
+<div class="announcements">
+    <div class="announcement-ticker">Latest Announcements: Deadline for trades is October 10 | New rule updates available | League finals on November 30</div>
+</div>
+
+<input type="text" class="search-bar" placeholder="Search for resources...">
+
+<div class="resource-category">
+    <div class="category-title" onclick="togglePanel('quickStart')">Quick Start Guide</div>
+    <div class="panel-content" id="quickStart">
+        <p>A concise guide on the basics of fantasy football, ideal for beginners.</p>
+    </div>
+</div>
+
+<div class="resource-category">
+    <div class="category-title" onclick="togglePanel('ruleSummary')">Rule Summary</div>
+    <div class="panel-content" id="ruleSummary">
+        <p>High-level overview of scoring rules, waiver policies, and other essentials.</p>
+    </div>
+</div>
+
+<div class="resource-category">
+    <div class="category-title" onclick="togglePanel('faq')">FAQ Section</div>
+    <div class="panel-content" id="faq">
+        <p>Answers to common questions about gameplay, scoring, and platform features.</p>
+    </div>
+</div>
+
+<div class="resource-category">
+    <div class="category-title">Important Links</div>
+    <div>
+        <a href="#" class="resource-link">League Message Board Page</a>
+        <a href="#" class="resource-link">League Documents Page</a>
+        <a href="#" class="resource-link">League Officials/Committees Page</a>
+        <a href="#" class="resource-link">League Polling Information Page</a>
+        <a href="#" class="resource-link">League Suggestions, Grievances, and Ideas Page</a>
+        <a href="#" class="resource-link">League News & Updates Page</a>
+        <a href="#" class="resource-link">User Feedback & Community Engagement Page</a>
+        <a href="#" class="resource-link">League Operational Calendar</a>
+    </div>
+</div>
+
+<div class="contact-section">
+    <div class="contact-title">Contact & Support</div>
+    <p>For league-related questions or support, please reach out via our <a href="#" class="contact-link">support page</a>.</p>
+</div>
+
+<script src="Leaguehqscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page Plaza</title>
+    <link rel="stylesheet" href="teamplazastyles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Team Page Plaza</h1>
+        <p>Select a team to view its dashboard and details.</p>
+    </header>
+
+    <section class="team-plaza">
+        <!-- Dynamic team cards for each team -->
+        <div class="team-card" style="border-color: #00ffcc;">
+            <img src="team1-logo.png" alt="Team 1 Logo" class="team-logo">
+            <h2>Team 1</h2>
+            <p>Current Rank: 1st</p>
+            <a href="team1.html" class="view-team-btn">View Team</a>
+        </div>
+
+        <!-- Additional team cards (repeat for 8 teams) -->
+        <div class="team-card" style="border-color: #ff3366;">
+            <img src="team2-logo.png" alt="Team 2 Logo" class="team-logo">
+            <h2>Team 2</h2>
+            <p>Current Rank: 2nd</p>
+            <a href="team2.html" class="view-team-btn">View Team</a>
+        </div>
+
+        <!-- Continue similarly for all teams up to 8 -->
+    </section>
+
+    <button onclick="goToLeagueHub()" class="back-btn">Back to League Hub</button>
+
+    <script src="teamplazascript.js"></script>
+</body>
+</html>

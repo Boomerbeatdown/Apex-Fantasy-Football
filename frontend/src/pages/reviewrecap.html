@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Recap Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reviewrecapstyles.css">
+</head>
+<body>
+    <header class="header">
+        Review Recap Library
+    </header>
+
+    <div class="highlights-section">
+        <h2 class="highlight-title">Weekly Highlights</h2>
+        <p>A summary of the latest and greatest matchups, players, and events of the week.</p>
+    </div>
+
+    <div class="search-bar-container">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search for reviews...">
+    </div>
+
+    <div class="review-grid" id="reviewGrid">
+        <!-- Example Review Card -->
+        <div class="review-card">
+            <h3 class="review-title">Week 5: Team A vs. Team B</h3>
+            <p class="review-date">October 8, 2024</p>
+            <p>Team A narrowly defeated Team B in an intense battle, with Player X scoring 35 points!</p>
+            <button class="favorite-btn" data-id="1">Add to Favorites</button>
+            <button class="expand-btn" data-id="1">View Details</button>
+            <div class="detailed-recap" id="recap-1">
+                <h4 class="recap-title">Detailed Recap</h4>
+                <p class="recap-content">Player X carried the team with 3 touchdowns, while Player Y's defense was the game-changer.</p>
+            </div>
+        </div>
+        <!-- Add more review cards dynamically -->
+    </div>
+
+    <footer>
+        <button class="filter-btn">Back to League Hub</button>
+        <a href="weekly-review.html" class="filter-btn">Weekly Review</a>
+        <a href="yearly-review.html" class="filter-btn">Yearly Review</a>
+    </footer>
+
+    <script src="reviewrecapscript.js"></script>
+</body>
+</html>

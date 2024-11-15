@@ -1,0 +1,57 @@
+/* Base styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Header styling */
+.header {
+    font-family: 'Oswald', sans-serif;
+    color: #00ffcc;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Layout sections for Hub */
+.featured-matchups, .live-feed, .comparison-card, .schedule-section, .player-spotlight, .game-chat {
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    box-shadow: 0 4px 10px rgba(0, 255, 204, 0.3);
+}
+
+.matchup-card, .live-game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.team-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.live-score {
+    font-size: 1.8em;
+    color: #ff3366;
+}
+
+.chat-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: #00ffcc;
+}
+
+#chat-box {
+    height: 200px;
+    background-color: #2a2a2a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    color: #ffffff;
+}

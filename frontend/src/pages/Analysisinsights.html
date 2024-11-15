@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis & Insights Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Analysisinsightsstyles.css">
+</head>
+<body>
+
+    <header class="header">
+        Analysis & Insights Lab
+    </header>
+
+    <section class="dashboard-grid">
+        
+        <!-- Overview Section -->
+        <div class="overview-card">
+            <h2>Overview</h2>
+            <p>Welcome to the Analysis & Insights Lab! Explore the latest projections, statistics, and analytics for league members.</p>
+            <a href="#" class="link-btn">Scouting & Prospect Board</a>
+            <a href="#" class="link-btn">Performance Analytics</a>
+            <a href="#" class="link-btn">Power Rankings</a>
+            <a href="#" class="link-btn">Analytical Tool Shed</a>
+        </div>
+
+        <!-- Current Week Matchup Projections -->
+        <div class="chart-card">
+            <h2>Current Week Matchup Projections</h2>
+            <div class="chart-placeholder">[Chart]</div>
+        </div>
+
+        <!-- Statistics Dashboard -->
+        <div class="chart-card">
+            <h2>Statistics Dashboard</h2>
+            <div class="chart-placeholder">[Stats]</div>
+        </div>
+
+        <!-- Player Comparison Tool -->
+        <div class="chart-card">
+            <h2>Player Comparison Tool</h2>
+            <div id="comparison-container"></div>
+            <div class="filter-container">
+                <select id="player1">
+                    <option>Select Player 1</option>
+                </select>
+                <select id="player2">
+                    <option>Select Player 2</option>
+                </select>
+                <button onclick="comparePlayers()" class="filter-btn">Compare</button>
+            </div>
+        </div>
+
+        <!-- Advanced Analytics Widgets -->
+        <div class="chart-card">
+            <h2>Advanced Analytics</h2>
+            <div class="chart-placeholder">[Advanced Analytics Widgets]</div>
+        </div>
+
+        <!-- Current Power Rankings -->
+        <div class="chart-card">
+            <h2>Power Rankings</h2>
+            <div class="chart-placeholder">[Rankings]</div>
+        </div>
+
+    </section>
+
+    <script src="Analysisinsightsscript.js"></script>
+</body>
+</html>

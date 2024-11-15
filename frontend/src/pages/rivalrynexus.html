@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivalry Nexus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rivalrynexusstyles.css">
+</head>
+<body>
+    <header class="header">Rivalry Nexus</header>
+
+    <section class="top-rivalries">
+        <div class="rivalry-card">
+            <h2 class="rivalry-title">Team A vs. Team B</h2>
+            <p>Head-to-Head: 15-10</p>
+            <p>League Ranking: Top 5</p>
+        </div>
+        <!-- Repeat similar rivalry-cards here -->
+    </section>
+
+    <section class="matchup-history">
+        <h2>Matchup History</h2>
+        <div class="matchup-item" onclick="toggleMatchupDetails(this)">
+            <h3>Match #1: Team A 3 - Team B 2</h3>
+            <div class="matchup-details">
+                <p>Date: 01/01/2022</p>
+                <p>Highlight: Amazing comeback by Team A in the final minutes.</p>
+            </div>
+        </div>
+        <!-- Repeat similar matchup-items here -->
+    </section>
+
+    <section class="trophies-section">
+        <div class="trophy-card">
+            <div class="trophy-icon">🏆</div>
+            <p>Most Wins</p>
+        </div>
+        <!-- Repeat similar trophy-cards here -->
+    </section>
+
+    <section class="highlights-section">
+        <h2>Rivalry Highlights</h2>
+        <div class="highlight-card">
+            <p>MVP Performance: Player X scored 40 points.</p>
+        </div>
+        <!-- Repeat similar highlight-cards here -->
+    </section>
+
+    <section class="message-board">
+        <h2 class="message-board-title">Trash Talk Message Board</h2>
+        <input type="text" class="message-input" id="messageInput" placeholder="Enter your message...">
+        <button class="message-submit" onclick="postMessage()">Submit</button>
+        <div id="messageList"></div>
+    </section>
+
+    <button onclick="goBack()" class="back-button">Back to League Hub</button>
+
+    <script src="rivalrynexusscripts.js"></script>
+</body>
+</html>

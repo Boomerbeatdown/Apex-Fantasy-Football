@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gallery-container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #e6e6e6;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #b3b3b3;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filters button {
+    background: #333;
+    color: #e6e6e6;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background: #555;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05);
+}
+
+.achievement-icon {
+    height: 80px;
+    background-size: cover;
+    border-bottom: 2px solid #444;
+}
+
+.bronze {
+    background: radial-gradient(circle, #a9702e, #6e4b1e);
+}
+
+.silver {
+    background: radial-gradient(circle, #b0b0b0, #5e5e5e);
+}
+
+.gold {
+    background: radial-gradient(circle, #ffd700, #9c8e00);
+}
+
+.platinum {
+    background: radial-gradient(circle, #e5e4e2, #a5a5a5);
+}
+
+.achievement-info {
+    padding: 15px;
+}
+
+.achievement-info h3 {
+    font-size: 1.2em;
+    color: #e6e6e6;
+}
+
+.achievement-info p {
+    font-size: 0.9em;
+    color: #b3b3b3;
+    margin: 5px 0 15px;
+}
+
+.progress-bar {
+    background: #333;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: #00bfff;
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer .links a {
+    color: #00bfff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+footer .links a:hover {
+    color: #fff;
+}
